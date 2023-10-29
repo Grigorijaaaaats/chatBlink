@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Мой чат</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Музыка</title>
+    <style type="text/css">
+        input {
+            display: flow;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 2px;
+            font-family: 'Arial Black', sans-serif;
+        }
+    </style>
 </head>
 <body>
-<div id="chat-box">
-<div id="messages"></div>
-<input type="text" id="message" placeholder="Введите ваше сообщение">
-<button onclick="sendMessage()">Отправить</button>
-</div>
+    <div id="form-div">
+        <form id="form-post" action="send.php" method="post">
+            <input type="text" placeholder="Имя" name="username"/>
+            <input type="email" placeholder="Е-мейл" name="email"/>
+            <input type="password" placeholder="Пароль"  name="password"/>
+            <button type="submit">Ок</button>
+        </form>
+    </div>
+    <script type="text/javascript">
+
+    </script>
 </body>
 </html>
